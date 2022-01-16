@@ -1,0 +1,4 @@
+json-server --watch server/db.json --port 3000
+
+ng g m pages/checkout -m=app --route checkout
+minuto 2:35

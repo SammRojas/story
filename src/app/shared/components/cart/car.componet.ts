@@ -8,7 +8,7 @@ import { ShoppingCardtService } from '../../services/shoping-card.service';
       *ngIf="{ total: total$ | async, quantity: quantity$ | async } as dataCart"
     >
       <mat-icon>add_shopping_cart</mat-icon>
-      <ng-container *ngIf="dataCart.total">
+      <ng-container *ngIf="dataCart.total || dataCart.quantity" >
         {{ dataCart.total | currency }}
         ({{ dataCart.quantity }})
       </ng-container>
